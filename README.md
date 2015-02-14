@@ -55,6 +55,8 @@ Do a final check to see if `go` is installed and running fine:
     root@git:~# go version
     go version go1.4.1 linux/amd64
 
+Step 3 - Install PostgreSQL:
+--------------------
 Install PostgreSQL:
 
     sudo apt-get install postgresql postgresql-contrib
@@ -96,3 +98,33 @@ Create a PostgreSQL Database:
      template1 | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
                |          |          |             |             | postgres=CTc/postgres
     (4 rows)
+
+Step 4 - Install Redis cache:
+--------------------
+Install Redis:
+
+    apt-get -y install redis-server
+    
+Check if Redis is successfully installed:
+
+    root@git:~# redis-server
+    [10196] 14 Feb 12:47:05.738 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+    [10196] 14 Feb 12:47:05.740 * Max number of open files set to 10032
+                    _._                                                  
+               _.-``__ ''-._                                             
+          _.-``    `.  `_.  ''-._           Redis 2.8.4 (00000000/0) 64 bit
+      .-`` .-```.  ```\/    _.,_ ''-._                                   
+     (    '      ,       .-`  | `,    )     Running in stand alone mode
+     |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+     |    `-._   `._    /     _.-'    |     PID: 10196
+      `-._    `-._  `-./  _.-'    _.-'                                   
+     |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+     |    `-._`-._        _.-'_.-'    |           http://redis.io        
+      `-._    `-._`-.__.-'_.-'    _.-'                                   
+     |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+     |    `-._`-._        _.-'_.-'    |                                  
+      `-._    `-._`-.__.-'_.-'    _.-'                                   
+          `-._    `-.__.-'    _.-'                                       
+              `-._        _.-'                                           
+                  `-.__.-'                                               
+
