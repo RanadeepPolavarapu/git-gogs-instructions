@@ -153,8 +153,19 @@ Double check Docker version:
     Git commit (server): a8a31ef
     root@git:~# 
 
-Step 6 - Install Python `pip
-------------------------------
+Step 6 - Install Python `pip` (optional)
+-----------------------------------------
     apt-get -y install python-dev python3-dev python-pip python3-pip
 
+Step 7 - Install fig
+---------------------
+    curl -L https://github.com/docker/fig/releases/download/1.0.1/fig-`uname -s`-`uname -m` > /usr/local/bin/fig; chmod +x /usr/local/bin/fig
 
+**OR**
+
+Install via `pip`: sudo pip install -U fig
+
+Check `fig` installation:
+
+    root@git:~# fig --version
+    fig 1.0.1
