@@ -163,7 +163,8 @@ Step 7 - Install fig
 
 **OR**
 
-Install via `pip`: sudo pip install -U fig
+Install via `pip`:  
+    sudo pip install -U fig
 
 Check `fig` installation:
 
