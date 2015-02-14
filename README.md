@@ -152,3 +152,9 @@ Double check Docker version:
     Go version (server): go1.4.1
     Git commit (server): a8a31ef
     root@git:~# 
+
+Step 6 - Install Python `pip
+------------------------------
+    apt-get -y install python-dev python3-dev python-pip python3-pip
+
+
