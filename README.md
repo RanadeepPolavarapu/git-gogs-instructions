@@ -27,21 +27,7 @@ A list of all available Golang versions at the time of writing this document.
        go1.1.2
        go1.1rc2
        go1.1rc3
-       go1.2
-       go1.2.1
-       go1.2.2
-       go1.2rc2
-       go1.2rc3
-       go1.2rc4
-       go1.2rc5
-       go1.3
-       go1.3.1
-       go1.3.2
-       go1.3.3
-       go1.3beta1
-       go1.3beta2
-       go1.3rc1
-       go1.3rc2
+       ...
        go1.4
        go1.4.1
        go1.4beta1
