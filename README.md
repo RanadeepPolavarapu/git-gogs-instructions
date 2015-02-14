@@ -55,3 +55,44 @@ Do a final check to see if `go` is installed and running fine:
     root@git:~# go version
     go version go1.4.1 linux/amd64
 
+Install PostgreSQL:
+
+    sudo apt-get install postgresql postgresql-contrib
+
+Create a PostgreSQL Database:
+
+    root@git:~# sudo su - postgres
+    postgres@git:~$
+    
+    postgres@git:~$ psql
+    psql (9.3.6)
+    Type "help" for help.
+    
+    postgres=# create database gogs;
+    CREATE DATABASE
+    postgres=# \l
+                                      List of databases
+       Name    |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges   
+    -----------+----------+----------+-------------+-------------+-----------------------
+     gogs      | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+     postgres  | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+     template0 | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
+               |          |          |             |             | postgres=CTc/postgres
+     template1 | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
+               |          |          |             |             | postgres=CTc/postgres
+    (4 rows)
+    
+    postgres=# GRANT ALL PRIVILEGES ON DATABASE gogs TO postgres;
+    GRANT
+    postgres=# \l
+                                      List of databases
+       Name    |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges   
+    -----------+----------+----------+-------------+-------------+-----------------------
+     gogs      | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =Tc/postgres         +
+               |          |          |             |             | postgres=CTc/postgres
+     postgres  | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+     template0 | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
+               |          |          |             |             | postgres=CTc/postgres
+     template1 | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
+               |          |          |             |             | postgres=CTc/postgres
+    (4 rows)
