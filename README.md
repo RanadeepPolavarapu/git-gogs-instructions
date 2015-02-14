@@ -54,7 +54,18 @@ Let's install the latest **stable** version:
      * Compiling...
     root@git:~# 
 
+Let us tell `gvm` which version of `go` we wish to use:
+
+    root@git:~# gvm use go1.4.1 [--default]
+    Now using version go1.4.1
+
 `gvm` auto sets `$GOROOT` and `$GOPATH` environment variables however, it sets them into `.gvm/` directory. Let's set them to the normal `$HOME/go` dir.
 
     export GOROOT=$HOME/go
     export PATH=$PATH:$GOROOT/bin
+
+Do a final check to see if `go` is installed and running fine:
+
+    root@git:~# go version
+    go version go1.4.1 linux/amd64
+
