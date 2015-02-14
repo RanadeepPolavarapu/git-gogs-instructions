@@ -47,6 +47,14 @@ A list of all available Golang versions at the time of writing this document.
        go1.4beta1
        ...
 
-Let's install the latest _stable_ version:
+Let's install the latest **stable** version:
 
-gvm install go1.4.1
+    root@git:~# gvm install go1.4.1
+    Installing go1.4.1...
+     * Compiling...
+    root@git:~# 
+
+`gvm` auto sets `$GOROOT` and `$GOPATH` environment variables however, it sets them into `.gvm/` directory. Let's set them to the normal `$HOME/go` dir.
+
+    export GOROOT=$HOME/go
+    export PATH=$PATH:$GOROOT/bin
