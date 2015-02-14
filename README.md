@@ -10,7 +10,7 @@ Step 1 - Install prerequisites:
     sudo apt-get -y update
     sudo apt-get -y install build-essential curl git mercurial make binutils bison gcc
 
-Step 2 - Install Golang:
+Step 2 - Install Golang
 --------------------
 A list of all available Golang versions at the time of writing this document.
 
@@ -55,7 +55,7 @@ Do a final check to see if `go` is installed and running fine:
     root@git:~# go version
     go version go1.4.1 linux/amd64
 
-Step 3 - Install PostgreSQL:
+Step 3 - Install PostgreSQL
 --------------------
 Install PostgreSQL:
 
@@ -99,7 +99,7 @@ Create a PostgreSQL Database:
                |          |          |             |             | postgres=CTc/postgres
     (4 rows)
 
-Step 4 - Install Redis cache:
+Step 4 - Install Redis cache
 --------------------
 Install Redis:
 
@@ -128,3 +128,27 @@ Check if Redis is successfully installed:
               `-._        _.-'                                           
                   `-.__.-'                                               
 
+Step 5 - Install Docker
+------------------------
+As of writing this: Docker is at `v1.5.0`:
+
+    sudo sh -c "wget -qO- https://get.docker.io/gpg | apt-key add -"
+    sudo sh -c "echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
+    sudo apt-get -y update
+    sudo apt-get -y install lxc-docker
+
+Double check Docker version: 
+
+    root@git:~# docker --version
+    Docker version 1.5.0, build a8a31ef
+    root@git:~# docker version
+    Client version: 1.5.0
+    Client API version: 1.17
+    Go version (client): go1.4.1
+    Git commit (client): a8a31ef
+    OS/Arch (client): linux/amd64
+    Server version: 1.5.0
+    Server API version: 1.17
+    Go version (server): go1.4.1
+    Git commit (server): a8a31ef
+    root@git:~# 
