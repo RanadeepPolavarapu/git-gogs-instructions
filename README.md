@@ -10,9 +10,9 @@ Step 1 - Install prerequisites:
     sudo apt-get -y update
     sudo apt-get -y install build-essential curl git mercurial make binutils bison gcc
 
-Step 2 - Install `Go`:
+Step 2 - Install Golang:
 --------------------
-A list of all available `Go` versions at the time of writing this document.
+A list of all available Golang versions at the time of writing this document.
 
     root@git:~# gvm listall
     
@@ -47,4 +47,6 @@ A list of all available `Go` versions at the time of writing this document.
        go1.4beta1
        ...
 
+Let's install the latest _stable_ version:
 
+gvm install go1.4.1
