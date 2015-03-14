@@ -12,7 +12,7 @@ Step 1 - Install prerequisites:
 
 Step 2 - Install Golang
 --------------------
-Install `gvm` prereqs:
+Install `gvm` prereqs:  
     sudo apt-get install curl git mercurial make binutils bison gcc build-essential
 
 A list of all available Golang versions at the time of writing this document.
