@@ -160,7 +160,7 @@ Double check Docker version:
 
 Step 6 - Install Python `pip` (optional)
 -----------------------------------------
-    apt-get -y install python-dev python3-dev python-pip python3-pip
+    sudo apt-get -y install python-dev python3-dev python-pip python3-pip
 
 Step 7 - Install fig
 ---------------------
