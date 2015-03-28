@@ -64,7 +64,7 @@ Step 3 - Install PostgreSQL
 --------------------
 Install PostgreSQL:
 
-    sudo apt-get install postgresql postgresql-contrib
+    sudo apt-get install postgresql postgresql-contrib libpq-dev
 
 Create a PostgreSQL Database:
 
