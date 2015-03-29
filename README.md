@@ -70,6 +70,13 @@ Create a PostgreSQL Database:
 
     root@git:~# sudo su - postgres
     postgres@git:~$
+
+Create a `gogs` user in PostgreSQL and specify a custom password:
+
+    postgres@git:~$ createuser -P gogs
+    Enter password for new role: 
+    Enter it again: 
+    postgres@git:~$ 
     
     postgres@git:~$ psql
     psql (9.3.6)
