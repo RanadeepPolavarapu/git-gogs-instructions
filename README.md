@@ -66,7 +66,7 @@ Install PostgreSQL:
 
     sudo apt-get install postgresql postgresql-contrib libpq-dev
 
-Create a PostgreSQL Database:
+Login as the `postgres` user:
 
     root@git:~# sudo su - postgres
     postgres@git:~$
@@ -77,7 +77,9 @@ Create a `gogs` user in PostgreSQL and specify a custom password:
     Enter password for new role: 
     Enter it again: 
     postgres@git:~$ 
-    
+
+Create a PostgreSQL Database:
+
     postgres@git:~$ psql
     psql (9.3.6)
     Type "help" for help.
