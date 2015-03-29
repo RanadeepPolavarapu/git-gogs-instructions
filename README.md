@@ -71,8 +71,8 @@ Login as the `postgres` user:
     root@git:~# sudo su - postgres
     postgres@git:~$
 
-Create a `gogs` user in PostgreSQL and specify a custom password:
-Use `dropuser` if you mess up.
+Create a `gogs` user in PostgreSQL and specify a custom password:  
+Use `dropuser` if you mess up.  
 
     postgres@git:~$ createuser -P gogs
     Enter password for new role: 
